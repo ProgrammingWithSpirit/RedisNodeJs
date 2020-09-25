@@ -3,7 +3,7 @@ var redis = new Redis(6380);
 
 redis.set("color", "blue");
 redis.get("color", function(_err, result) {
-    console.log("Color before ", result);
+    console.log("Color before changes ", result);
 });
 
 redis.set("color", "red");
